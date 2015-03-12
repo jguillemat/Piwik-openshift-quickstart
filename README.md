@@ -15,7 +15,7 @@ rhc app create -a piwik -t php-5.3 -l $USERNAME
     
 Add mysql support to your application
         
-rhc cartridge add -a piwik -c mysql -l $USERNAME  
+rhc cartridge add -a piwik -c mysql-5.1 -l $USERNAME  
     
 Make a note of the username, password, and host name as you will need to use these to complete the Piwik installation on OpenShift
     
@@ -25,7 +25,7 @@ cd piwik/php
         
 rm -rf *  
         
-git remote add upstream -m master git://github.com/gshipley/piwik-openshift-quickstart.git  
+git remote add upstream -m master git://github.com/jguillemat/Piwik-openshift-quickstart.git  
         
 git pull -s recursive -X theirs upstream master
     
